@@ -1,15 +1,17 @@
 import unittest
-from main import LinkedList
-from add import addTwoLinkedList
+from LinkedList import LinkedList
+from addTwoLikedListFunction import addTwoLinkedList
 
 
 class TestTask(unittest.TestCase):
 
     def test_first_case(self):
+        # input   l1 = [2,4,3]
         list1 = LinkedList()
         list1.push(2)
         list1.push(4)
         list1.push(3)
+        #input l2 = [5,6,4]
         list2 = LinkedList()
         list2.push(5)
         list2.push(6)

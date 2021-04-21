@@ -1,5 +1,5 @@
-from main import Node
-from main import LinkedList
+from Node import Node
+from LinkedList import LinkedList
 
 
 # 2ta linked list bo'sa ular har bir element qo'shish kerak
@@ -11,7 +11,7 @@ from main import LinkedList
 
 def addTwoLinkedList(list1: Node, list2: Node):
     if list1 is None or list2 is None:
-        return ValueError('two list must given for function')
+        return ValueError('Please give two linked list ')
 
     sum = 0
 
