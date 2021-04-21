@@ -36,4 +36,7 @@ def addTwoLinkedList(list1: Node, list2: Node):
 
         sum = adder // 10
 
+    if sum > 0:
+        returnLinkedList.push(sum)
+
     return returnLinkedList
