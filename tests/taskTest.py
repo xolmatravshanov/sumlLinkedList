@@ -21,25 +21,18 @@ class TestTask(unittest.TestCase):
         self.assertEqual(newList.head.data, 7)
 
     def test_second_case(self):
+        # input  l1 = [9,9,9,9,9,9,9]
         list3 = LinkedList()
         i = 0
         while i < 7:
             list3.push(9)
-            print('i')
-            print(i)
-            print('i')
             i += 1
-
-
+        # input   l2 = [9,9,9,9]
         list4 = LinkedList()
         j = 0
         while j < 4:
             list4.push(9)
-            print('j')
-            print(j)
-            print('j')
             j += 1
-
 
         newList = addTwoLinkedList(list3.head, list4.head)
         newList.reverse()
