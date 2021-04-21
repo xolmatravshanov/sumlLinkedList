@@ -6,16 +6,28 @@ class Node:
 
 
 class LinkedList:
+
     def __init__(self):
         self.head = None
 
+    def push(self, nodeData):
+        new_node = Node(nodeData)
+        new_node.next = self.head
+        self.head = new_node
 
-def addTwoLinkedList(ls1: LinkedList, ls2: LinkedList):
+    def reverse(self):
+        prev = None
+        current = self.head
+        while current is not None:
+            next = current.next
+            current.next = prev
+            prev = current
+            current = next
+        self.head = prev
 
-    if ls1 == None or ls2 == None:
-        return LinkedList
-
-
-
-
-
+    def printList(self):
+        temp = self.head
+        while temp:
+            print(temp.data)
+            temp = temp.next
+            print(temp)
